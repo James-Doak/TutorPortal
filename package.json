@@ -1,0 +1,16 @@
+{
+  "name": "tutorportal",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "TutorPortal: build custom Mathematics Advanced practice papers from trial paper questions.",
+  "scripts": {
+    "build:data": "node scripts/build-data.mjs",
+    "build:private": "node scripts/build-data.mjs --private",
+    "sync": "node scripts/sync-supabase.mjs",
+    "dev": "npx serve site"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}

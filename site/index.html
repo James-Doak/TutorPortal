@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f3f3f3">
+<title>TutorPortal: Practice paper builder for maths tutors</title>
+<meta name="description" content="Build custom Mathematics Advanced practice papers from trial paper questions in minutes.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap masthead">
+  <p class="eyebrow">New South Wales · Mathematics Advanced</p>
+  <a class="brand" href="index.html">TutorPortal</a>
+  <p class="tagline">Practice papers for tutors</p>
+  <div class="toolbar"><span id="authSlot"><a class="btn primary" href="login.html">Sign In</a></span></div>
+  <nav class="nav">
+    <a href="index.html" class="active">Home</a>
+    <a href="builder.html">Builder</a>
+    <a href="history.html">History</a>
+  </nav>
+</div></header>
+
+<main class="wrap">
+  <section class="hero">
+    <h1>Custom practice papers, built in minutes.</h1>
+    <p>Choose the topics and how many questions you want. TutorPortal builds a print-ready paper from real trial questions, in their original wording, easiest to hardest.</p>
+    <div class="actions">
+      <a class="btn primary" href="builder.html">Log in to build a paper</a>
+      <a class="btn" href="login.html">Create a free profile</a>
+    </div>
+  </section>
+
+  <section class="cards">
+    <div class="card"><div class="num">1</div><h3>Choose what to include</h3><p>Pick schools, topics and how many multiple-choice and written-response questions.</p></div>
+    <div class="card"><div class="num">2</div><h3>Preview and print</h3><p>Related parts stay together, questions run easy to hard, and diagrams come with them.</p></div>
+    <div class="card"><div class="num">3</div><h3>Keep your history</h3><p>With a profile, every paper is saved so you can re-print it or avoid repeating questions. </p></div>
+  </section>
+</main>
+
+<footer class="site-footer"><div class="wrap">TutorPortal is an independent tool for tutors. Not affiliated with NESA or any school.</div></footer>
+<script src="js/config.js"></script>
+<script src="js/auth.js"></script>
+<script>document.addEventListener("DOMContentLoaded",()=>{if(window.TP)TP.session().then(s=>{if(s)document.querySelector(".hero .btn.primary").textContent="Build a paper"}).catch(()=>{})})</script>
+</body>
+</html>
