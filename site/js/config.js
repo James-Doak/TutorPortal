@@ -2,5 +2,5 @@
 // The anon key is safe to expose; access is controlled by row-level security rules.
 window.TUTORPORTAL = {
   supabaseUrl: 'https://yjtqghbgxuizaghvcqwi.supabase.co',
-  supabaseAnonKey: '',
+  supabaseAnonKey: 'sb_publishable_BcHbUw6OqOHCb-UvDHSjTw_onUtiFxA',
 };
